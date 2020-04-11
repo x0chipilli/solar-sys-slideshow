@@ -39,47 +39,28 @@ img{
   user-select: none;
 }
 
-#prevBtn{
-  position: absolute;
-  top: 50%;
-  left: 3%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
+.buttons{
+  width: 330px;
+  margin: 2rem auto;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  color: black;
-  background-color: rgb(167, 167, 167);
-  font-size: 2rem;
-  cursor: pointer;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  justify-content: space-around;
 }
 
-#nextBtn{
-  position: absolute;
-  top: 50%;
-  right: 3%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.buttons div{
+  height: 30px;
+  width: 30px;
+  background: lightskyblue;
   border-radius: 50%;
-  color: black;
-  background-color: rgb(167, 167, 167);
-  font-size: 2rem;
   cursor: pointer;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
-.carousel-container:hover #prevBtn,
-.carousel-container:hover #nextBtn{
-  opacity: 0.4;
+.active-btn{
+  background-color: yellow  !important;
+}
+
+.buttons div:hover{
+  background-color: yellow;
 }
 
 @media screen and (max-width: 600px){
